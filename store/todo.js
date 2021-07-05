@@ -28,7 +28,7 @@ export const mutations = {
   },
 
   fromLocalstorage(state, payload) {
-    state.todoList = payload
+    state.todoList = payload ? payload : []
   },
 
   changeRoute(state, payload) {
